@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Inheritance</title>
+	</head>
+	<body>
+		<div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+		var person = function(name) {
+			this.name = name;
+		}
+		
+		var p = new person('OM');
+		document.write('Name of Person: ' + p.name);
+		document.write('</br>');
+		
+		var student = function(name) {
+			this.name = p.name;
+		}
+		
+		var s = new student('Dev');
+		document.write('Name of Student: ' + s.name);
+
+	</script>
+</html>
